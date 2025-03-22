@@ -1,0 +1,80 @@
+/**** TimeLine Section****/
+.timeline {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.timeline-wrapper {
+    width: 100vw; 
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-track {
+    display: flex;
+    align-items: center;
+    gap: 300px; 
+    width: max-content;
+    position: relative;
+} 
+
+
+.timeline-item {
+    min-width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid black;
+}
+
+.timeline-line {
+    position: absolute;
+    top: -5px; 
+    left: 50%;
+    width: 300px; /* Same with gap*/
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    transform: translateX(50%);
+}
+
+.timeline-item:last-child .timeline-line {
+    display: none;
+}
+
+/* Timeline item */
+.timeline-item-title{
+    font-family: Paperlogy Bold;
+    font-size:x-large;
+}
+.timeline-item-sub-title{
+    font-family: Paperlogy Bold;
+    font-size:large;
+}
+
+.dummy-item {
+    width: 50vw; /* 충분한 너비 */
+    flex-shrink: 0;
+  }

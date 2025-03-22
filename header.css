@@ -1,0 +1,8 @@
+/* 💡 헤더 타이틀 (JAY MO) */
+.header-title {
+    font-family: 'Paperlogy', sans-serif;
+    font-size: 7vw; /* 반응형 */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+}

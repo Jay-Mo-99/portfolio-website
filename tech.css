@@ -1,0 +1,69 @@
+.tech{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    color:black;
+    
+}
+.tech-section-title{
+    padding:50px
+}
+
+
+.tech-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.tech-card {
+    width: 200px;
+    height: 200px;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+@media (min-width: 768px) {
+    .tech-card {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.tech-card:hover {
+    background: #ff9800;
+    transform: scale(1.1);
+    color: white;
+}
+
+.tech-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.tech-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.tech-overlay {
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tech-card:hover .tech-overlay {
+    opacity: 1;
+}

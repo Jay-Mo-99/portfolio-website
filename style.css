@@ -1,0 +1,90 @@
+/* 📌 Paperlogy Thin */
+@font-face {
+    font-family: 'Paperlogy Thin';
+    src: url('fonts/Paperlogy-1Thin.ttf') format('truetype');
+}
+
+/* 📌 Paperlogy Extra Light */
+@font-face {
+    font-family: 'Paperlogy ExtraLight';
+    src: url('fonts/Paperlogy-2ExtraLight.ttf') format('truetype');
+}
+
+/* 📌 Paperlogy Light */
+@font-face {
+    font-family: 'Paperlogy Light';
+    src: url('fonts/Paperlogy-3Light.ttf') format('truetype');
+}
+
+/* 📌 Paperlogy Regular */
+@font-face {
+    font-family: 'Paperlogy Regular';
+    src: url('fonts/Paperlogy-4Regular.ttf') format('truetype');
+}
+
+/* 📌 Paperlogy Medium */
+@font-face {
+    font-family: 'Paperlogy Medium';
+    src: url('fonts/Paperlogy-5Medium.ttf') format('truetype');
+}
+
+/* 📌 Paperlogy Semi Bold */
+@font-face {
+    font-family: 'Paperlogy SemiBold';
+    src: url('fonts/Paperlogy-6SemiBold.ttf') format('truetype');
+}
+
+/* 📌 Paperlogy Bold */
+@font-face {
+    font-family: 'Paperlogy Bold';
+    src: url('fonts/Paperlogy-7Bold.ttf') format('truetype');
+}
+
+/* 📌 Paperlogy Extra Bold */
+@font-face {
+    font-family: 'Paperlogy ExtraBold';
+    src: url('fonts/Paperlogy-8ExtraBold.ttf') format('truetype');
+}
+
+/* 📌 Paperlogy Black */
+@font-face {
+    font-family: 'Paperlogy Black';
+    src: url('fonts/Paperlogy-9Black.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Paperlogy', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+/* 💡 헤더 스타일 */
+header {
+    font-family: Paperlogy white;
+    background-color: black;
+    color:white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 💡 섹션 제목 */
+.section-title {
+    font-family: 'Paperlogy', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 💡 섹션 기본 스타일 */
+.section-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+

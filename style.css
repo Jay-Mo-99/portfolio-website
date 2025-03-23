@@ -75,4 +75,8 @@ body {
     transition: all 0.8s ease-out;
 }
 
+a:hover {
+    color: #F14436;
+  }
+
 

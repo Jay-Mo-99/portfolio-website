@@ -61,22 +61,10 @@ body {
     color: black;
 }
 
-/* 💡 헤더 스타일 */
-header {
-    font-family: Paperlogy white;
-    background-color: black;
-    color:white;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* 💡 섹션 제목 */
 .section-title {
-    font-family: 'Paperlogy', sans-serif;
+    font-family: 'Paperlogy SemiBold';
     font-size: 3vw;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 

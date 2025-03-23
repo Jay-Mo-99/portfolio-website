@@ -1,0 +1,186 @@
+header {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .scroll-down-arrow {
+    margin-top: 1.5rem;
+    animation: bounceDown 1.8s infinite;
+    display: inline-block;
+  }
+  @keyframes bounceDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  @keyframes twinkleFade {
+    0%, 100% { opacity: 0.08; }
+    50% { opacity: 0.15; }
+  }
+  .real-stars {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    box-shadow:
+      30px 100px white,
+      100px 300px white,
+      150px 500px white,
+      200px 120px white,
+      250px 600px white,
+      300px 750px white,
+      350px 200px white,
+      400px 450px white,
+      450px 680px white,
+      500px 90px white,
+      550px 300px white,
+      600px 580px white,
+      650px 720px white,
+      700px 220px white,
+      750px 360px white,
+      800px 540px white,
+      850px 110px white,
+      900px 400px white,
+      950px 670px white,
+      1000px 250px white,
+      1050px 500px white,
+      1100px 700px white,
+      1150px 180px white,
+      1200px 360px white,
+      1250px 620px white,
+      1300px 90px white,
+      1350px 320px white,
+      1400px 580px white,
+      1450px 700px white,
+      1500px 200px white;
+    opacity: 0.3;
+    animation: twinkle 4s ease-in-out infinite;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.6; }
+  }
+  
+  /* 텍스트 그룹이 위로 오게 */
+  .text-group {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .rotating-text {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .orbit-wrapper {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .orbit-img-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: rotateOrbit 20s linear infinite;
+  }
+  
+  .orbit-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  
+  .orbit-caption {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    color: #ccc;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+  .orbit-img-box:hover .orbit-caption {
+    color: white;
+    opacity: 1;
+  }
+  
+  /**********
+  /**video section**/
+
+  .video-section {
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .lines-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 600px; /* 길게! */
+    background-color: white;
+    opacity: 0.2;
+    transform-origin: top center;
+  }
+  
+
+  .video-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .video-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .intro-section {
+    height: 100vh;
+    background-color: white;
+    padding: 100px;
+  }
+  

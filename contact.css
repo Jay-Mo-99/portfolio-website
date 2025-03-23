@@ -1,0 +1,36 @@
+.contact {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .contact-links a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-links a i {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .contact-links a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+  }
